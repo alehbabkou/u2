@@ -1,0 +1,11 @@
+---
+- hosts: [all]
+  user:
+  become: yes
+  roles:
+    - apache
+    - php7
+    - mysql
+    #- postgresql
+    - zabbix-server
+    #- zabbix-agent

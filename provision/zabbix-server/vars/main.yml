@@ -1,0 +1,12 @@
+---
+  package_state: "present"
+  packages:
+    - zabbix-server-mysql
+  ubuntu_packages:
+  - libapache2-mod-php7.0
+  - php7.0-bcmath
+  - php7.0-mbstring
+  - php7.0-ldap
+  - php7.0-{{ database_type }}
+  - php7.0-xml
+  - php7.0-php
